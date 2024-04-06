@@ -31,7 +31,7 @@ p {
   margin-top: 0;
 }
 .container{
- width: 100%;
+ max-width: 320px;
   /* max-width: 1158px; */
     margin: 0 auto;
     padding-left: 15px;
@@ -225,7 +225,7 @@ p {
   overflow: hidden;
 }
 .headline-cont{
-  padding: 96px o;
+  padding: 96px 0;
  }
  .icon-item{
   border: 1px solid #8e8f99;
@@ -296,7 +296,64 @@ text-align: left;
   text-align: left;
   margin-top: 8px; */
 }
-
+@media screen and (min-width: 768px){
+ 
+}
+@media screen and (min-width: 1158px) {
+  .container{
+   max-width: 1158px; 
+   }
+  
+  .headline-list {
+    display: flex;
+    flex-direction: row;
+   text-align: center;
+   gap: 24px;
+ }
+ .headline-item {
+  width:calc((100% - 72px) / 4);
+}
+.headline {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.headline-subtitle {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  display: flex;
+  text-align: left;
+}
+.headline-item-text {
+ font-size: 16px;
+ line-height: 1.5;
+ letter-spacing: 0.02em;
+ color: #434455;
+ display: flex;
+ text-align: left;
+ margin-top: 8px;
+}
+.icon-item-content{
+  display: flex;
+}
+  .icon-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+}
+.headline-cont{
+  padding: auto;
+ }
+}
 /*====================OurTeam======================*/
 .icon{
   gap: 24px;
