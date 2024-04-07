@@ -674,6 +674,7 @@ color: #434455;
 }
 
 .ourteam-item-text {
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -1051,7 +1052,7 @@ fill: #f4f4fd;
 .backdrop.is-open{
   opacity: 0;
   pointer-events: auto;
-  visibility: inherit;
+  visibility: hidden;
 }
 .modal{
   position: absolute;
